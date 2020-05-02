@@ -22,11 +22,8 @@ void loop(){
 	Serial.println(temp);
 	Sleep(1000);
 	
-		
-		
 	
 	
-	loop();
 }
 
 

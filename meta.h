@@ -37,6 +37,6 @@ void loop();
 
 int main(){
 	setup();
-	loop();
+	while(1) loop();
 	return 0;
 }
