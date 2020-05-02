@@ -32,6 +32,8 @@ int randomNumber(int upper=0, int lower=0){
 analogRead(int pin){ return randomNumber(1023, 0); }
 digitalRead(int pin){ return randomNumber(5, 0); }
 
+void delay(int value){ Sleep(value); }
+
 void setup();
 void loop();
 
