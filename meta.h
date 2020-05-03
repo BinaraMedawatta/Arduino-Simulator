@@ -8,13 +8,13 @@ class Meta{
 	int baud;
 	
 	public :
-		begin(int value){ baud = value; }
-		print(int value){ cout << value; }
-		print(string value){ cout << value; }
-		print(double value){ cout << value; }
-		println(int value){ cout << value << endl;}
-		println(string value){ cout << value << endl; }
-		println(double value){ cout << value << endl; }
+		void begin(int value){ baud = value; }
+		void print(int value){ cout << value; }
+		void print(string value){ cout << value; }
+		void print(double value){ cout << value; }
+		void println(int value){ cout << value << endl;}
+		void println(string value){ cout << value << endl; }
+		void println(double value){ cout << value << endl; }
 		
 };
 
@@ -28,8 +28,8 @@ int randomNumber(int upper=0, int lower=0){
 	return ((rand() % (upper - lower + 1)) + lower);
 }
 
-analogRead(int pin){ return randomNumber(1023, 0); }
-digitalRead(int pin){ return randomNumber(1, 0); }
+int analogRead(int pin){ return randomNumber(1023, 0); }
+int digitalRead(int pin){ return randomNumber(1, 0); }
 
 void delay(int value){ Sleep(value); }
 void delayMicroseconds(int value){ Sleep(value*1000); }
